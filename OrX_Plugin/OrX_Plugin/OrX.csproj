@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EF4C6CD-2E8C-4177-B882-D187D355D321}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrX</RootNamespace>
+    <AssemblyName>OrX</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\KSP131Surafce AI\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>F:\KSP131Surafce AI\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="BDArmory, Version=1.1.0.39456, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\@Dependencies\BDArmory.dll</HintPath>
+    </Reference>
+    <Reference Include="BDArmory.Core">
+      <HintPath>F:\KSP131Surafce AI\GameData\BDArmory\Plugins\BDArmory.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="KSPAssets">
+      <HintPath>F:\KSP131Surafce AI\KSP_x64_Data\Managed\KSPAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="KSPDev_Utils.0.33">
+      <HintPath>..\..\@Dependencies\KSPDev_Utils.0.33.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:\KSP131Surafce AI\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\KSP131Surafce AI\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Missions\Missions.cs" />
+    <Compile Include="Missions\MissionSetup\LootBoxContSetup.cs" />
+    <Compile Include="PartModules\ModuleOrXHole.cs" />
+    <Compile Include="PartModules\ModuleOrXTardis.cs" />
+    <Compile Include="PartModules\ModuleOrXLootBox.cs" />
+    <Compile Include="PartModules\ModuleOrXMissileFire.cs" />
+    <Compile Include="PartModules\Helmets\ModuleOrXACS.cs" />
+    <Compile Include="PartModules\Helmets\ModuleStayPunkdHead.cs" />
+    <Compile Include="PartModules\ModuleOrXBBProx.cs" />
+    <Compile Include="Missions\MissionSetup\WaldosIslandSetup.cs" />
+    <Compile Include="PartModules\ModuleOrXDestroyVessel.cs" />
+    <Compile Include="Utilities\OrXSpawn\OrXSpawn.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_KerbalUpgrades.cs" />
+    <Compile Include="Missions\MissionLauncher.cs" />
+    <Compile Include="Utilities\Status\OrX_ShipSave.cs" />
+    <Compile Include="ModuleOrXDummy.cs" />
+    <Compile Include="PartModules\ModuleOrXParaMotor.cs" />
+    <Compile Include="Utilities\Status\OrX_ParaGliding101.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnWaldoAttack.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnOrX_Fighter.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\SpawnOrX_TacticalToys.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\SpawnOrX_DCKFT.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\SpawnOrX_SMI.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\SpawnOrX_BDArmory.cs" />
+    <Compile Include="Utilities\Status\OrXVesselSwitcher.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseAddonAddModule.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseContainer.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseController.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseDebug.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseLogic.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseModule.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseOrderController.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseSettings.cs" />
+    <Compile Include="Utilities\OrXchase\OrXchaseTokenReader.cs" />
+    <Compile Include="Utilities\OrXchase\Extentions\OrXchaseExtentions.cs" />
+    <Compile Include="Utilities\OrXchase\Extentions\Util.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\OrXchaseFormation.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\OrXchaseOrder.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\OrXchasePatrol.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\OrXchaseStructs.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\OrXchaseWanderer.cs" />
+    <Compile Include="Utilities\OrXchase\ControlTypes\IOrXchaseControlType.cs" />
+    <Compile Include="Utilities\OrXchase\Detection\DeadSpaceDetection.cs" />
+    <Compile Include="Utilities\OrXchase\Detection\IDetection.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnLootBox.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnOrX_Tank.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_DCKFT.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_BDAc.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_TacticalToys.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_SMI.cs" />
+    <Compile Include="Utilities\OrXSpawn\SportingGoods\OrX_SportingGoods.cs" />
+    <Compile Include="Utilities\Status\OrX_Controls.cs" />
+    <Compile Include="PartModules\ModuleOrXEULARefinery.cs" />
+    <Compile Include="Utilities\Status\OrX_Log.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnOrX_ODST.cs" />
+    <Compile Include="Utilities\OrXSpawn\SpawnOrX_Airborne.cs" />
+    <Compile Include="TEMPLATEMONO - Copy.cs" />
+    <Compile Include="PartModules\AI\ModuleOrXSurfaceAI.cs" />
+    <Compile Include="Utilities\OrXPartCatalog.cs" />
+    <Compile Include="PartModules\AI\ModuleOrXAirborneAI.cs" />
+    <Compile Include="PartModules\AI\ModuleOrXODST.cs" />
+    <Compile Include="PartModules\ModuleScubaTank.cs" />
+    <Compile Include="PartModules\Helmets\ModuleHelmet_Race.cs" />
+    <Compile Include="PartModules\Helmets\ModuleHelmet_WW2.cs" />
+    <Compile Include="PartModules\Helmets\ModuleHelmet_OrX.cs" />
+    <Compile Include="Utilities\Status\OrX_Scuba.cs" />
+    <Compile Include="Utilities\Status\OrX_WaldoHP.cs" />
+    <Compile Include="Utilities\Status\OrX_HP.cs" />
+    <Compile Include="PartModules\ModuleOrX.cs" />
+    <Compile Include="PartModules\ModuleHackKerbal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PartModules\ModuleOrXWeapon.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
