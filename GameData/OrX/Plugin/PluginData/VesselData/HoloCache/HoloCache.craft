@@ -1,0 +1,163 @@
+ship = HoloCache
+version = 1.4.5
+description = 
+type = SPH
+size = 0.370279193,0.370278358,0.370279282
+steamPublishedFileId = 0
+persistentId = 2610965987
+rot = 0,0,0,0
+missionFlag = OrX/Agencies/OrX
+vesselType = Debris
+PART
+{
+	part = OrX.HoloCacheV_4294594558
+	partName = Part
+	persistentId = 416549213
+	pos = 0,10,0
+	attPos = 0,0,0
+	attPos0 = 0,10,0
+	rot = 0.707106829,0,0,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0.707106769,0,0,0.707106769
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleKISItem
+		isEnabled = True
+		staticAttached = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleOrXHoloCache
+		isEnabled = True
+		getGPS = True
+		setup = False
+		isSetup = False
+		sth = False
+		_sth = 
+		lat = 0
+		lon = 0
+		alt = 0
+		celestialBody = 
+		HoloCacheName = HoloCache
+		text1 = 
+		text2 = 
+		text3 = 
+		spawned = False
+		HoloCraft1 = 
+		HoloCoord1 = False
+		HoloCoord1lat = 0
+		HoloCoord1lon = 0
+		HoloCoord1alt = 0
+		HoloCraft2 = 
+		HoloCoord2 = False
+		HoloCoord2lat = 0
+		HoloCoord2lon = 0
+		HoloCoord2alt = 0
+		HoloCraft3 = 
+		HoloCoord3 = False
+		HoloCoord3lat = 0
+		HoloCoord3lon = 0
+		HoloCoord3alt = 0
+		HoloCraft4 = 
+		HoloCoord4 = False
+		HoloCoord4lat = 0
+		HoloCoord4lon = 0
+		HoloCoord4alt = 0
+		HoloCraft5 = 
+		HoloCoord5 = False
+		HoloCoord5lat = 0
+		HoloCoord5lon = 0
+		HoloCoord5alt = 0
+		HoloCraft6 = 
+		HoloCoord6 = False
+		HoloCoord6lat = 0
+		HoloCoord6lon = 0
+		HoloCoord6alt = 0
+		HoloCraft7 = 
+		HoloCoord7 = False
+		HoloCoord7lat = 0
+		HoloCoord7lon = 0
+		HoloCoord7alt = 0
+		HoloCraft8 = 
+		HoloCoord8 = False
+		HoloCoord8lat = 0
+		HoloCoord8lon = 0
+		HoloCoord8alt = 0
+		HoloCraft9 = 
+		HoloCoord9 = False
+		HoloCoord9lat = 0
+		HoloCoord9lon = 0
+		HoloCoord9alt = 0
+		HoloCraft10 = 
+		HoloCoord10 = False
+		HoloCoord10lat = 0
+		HoloCoord10lon = 0
+		HoloCoord10alt = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 500
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
