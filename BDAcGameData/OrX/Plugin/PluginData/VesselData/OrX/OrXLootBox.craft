@@ -1,0 +1,8106 @@
+ship = OrX Loot Box
+version = 1.4.4
+description = 
+type = SPH
+size = 1.00047278,1.04558563,0.80286324
+steamPublishedFileId = 0
+persistentId = 340446679
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Debris
+PART
+{
+	part = OrXLootBox2_4294542802
+	partName = Part
+	persistentId = 2693396493
+	pos = 0,10,0
+	attPos = 0,0,0
+	attPos0 = 0,10,0
+	rot = 0.707106829,0,0,0.707106829
+	attRot = 0,0,0,1
+	attRot0 = 0.707106769,0,0,0.707106769
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 107353
+	modMass = 5.52630186
+	modSize = 0,0,0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ITEM
+		{
+			partName = OrX.AmmoPack
+			slot = 0
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AmmoPack
+				cid = 4294879996
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AmmoPack
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = FPS Ammo
+					amount = 1000
+					maxAmount = 1000
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = FPS Ammo Rockets
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CFEnable
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.paramotor
+			slot = 10
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.paramotor
+				cid = 4294860354
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00200000009
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.paramotor
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = EVA Propellant
+					amount = 10
+					maxAmount = 10
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 4
+					maxAmount = 5
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = FPS Ammo
+					amount = 500
+					maxAmount = 500
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXParaMotor
+					isEnabled = True
+					_throttle = 0
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					animState = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SkubaKerbtanks
+			slot = 20
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SkubaKerbtanks
+				cid = 4294858624
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SkubaKerbtanks
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleScubaTank
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.ChainGunHand
+			slot = 2
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.ChainGunHand
+				cid = 4294871802
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.ChainGunHand
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SMSIAKuziMK1RLleft
+			slot = 44
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SMSIAKuziMK1RLleft
+				cid = 4294872178
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SMSIAKuziMK1RLleft
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.KerbRaceHelmet
+			slot = 22
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.KerbRaceHelmet
+				cid = 4294872920
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000500000024
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.KerbRaceHelmet
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MilkorMGLHandSMS
+			slot = 3
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MilkorMGLHandSMS
+				cid = 4294869780
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00200000009
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MilkorMGLHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.AmmoRkt
+			slot = 40
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AmmoRkt
+				cid = 4294880228
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AmmoRkt
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = FPS Ammo Rockets
+					amount = 10
+					maxAmount = 10
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CFEnable
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.Ammo
+			slot = 30
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.Ammo
+				cid = 4294880122
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.Ammo
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = FPS Ammo
+					amount = 1000
+					maxAmount = 1000
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CFEnable
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.JavelinMissileLauncher
+			slot = 9
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.JavelinMissileLauncher
+				cid = 4294873590
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.JavelinMissileLauncher
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 50
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileTurret
+					isEnabled = True
+					autoReturn = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAGM114KisFPS
+			slot = 8
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAGM114KisFPS
+				cid = 4294873946
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAGM114KisFPS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AGM-114
+					maxStaticLaunchRange = 6000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 180
+					DetonationDistance = 0.100000001
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAGM114KisFPS
+			slot = 17
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAGM114KisFPS
+				cid = 4294873946
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAGM114KisFPS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AGM-114
+					maxStaticLaunchRange = 6000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 180
+					DetonationDistance = 0.100000001
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaCamPodKis
+			slot = 6
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaCamPodKis
+				cid = 4294858294
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaCamPodKis
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = False
+					throttle = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.AT4x2RocketLauncher
+			slot = 12
+			quantity = 1
+			equipped = False
+			resourceMass = 0.0243999995
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AT4x2RocketLauncher
+				cid = 4294875722
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AT4x2RocketLauncher
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = Hydra70Rocket
+					amount = 2
+					maxAmount = 2
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = RocketLauncher
+					isEnabled = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 35
+					minPitch = -30
+					yawRange = 180
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 2
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.AT4x8RocketLauncher
+			slot = 13
+			quantity = 1
+			equipped = False
+			resourceMass = 0.0975999981
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AT4x8RocketLauncher
+				cid = 4294879714
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00150000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AT4x8RocketLauncher
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = Hydra70Rocket
+					amount = 8
+					maxAmount = 8
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = RocketLauncher
+					isEnabled = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 35
+					minPitch = -30
+					yawRange = 180
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 2
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.WWIIHelmet
+			slot = 41
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.WWIIHelmet
+				cid = 4294857126
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000500000024
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.WWIIHelmet
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.PEWmk19Hand
+			slot = 4
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.PEWmk19Hand
+				cid = 4294867566
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.PEWmk19Hand
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SmokeGrenade
+			slot = 25
+			quantity = 1
+			equipped = False
+			resourceMass = 0.00139999995
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SmokeGrenade
+				cid = 4294874724
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00039999999
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SmokeGrenade
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = CMSmoke
+					amount = 2
+					maxAmount = 2
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = CMDropper
+					isEnabled = True
+					ejectVelocity = 30
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDACategoryModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.44MagnumHandSMS
+			slot = 45
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.44MagnumHandSMS
+				cid = 4294880988
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000549999997
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.44MagnumHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.M4A1HandSMS
+			slot = 36
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.M4A1HandSMS
+				cid = 4294870576
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000750000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.M4A1HandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SMSIAKuziMK1RL
+			slot = 43
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SMSIAKuziMK1RL
+				cid = 4294872532
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SMSIAKuziMK1RL
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MilkorMGLHandSMS
+			slot = 14
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MilkorMGLHandSMS
+				cid = 4294869780
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00200000009
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MilkorMGLHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrXhelmetOrX
+			slot = 42
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrXhelmetOrX
+				cid = 4294863574
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 9.99999975E-05
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrXhelmetOrX
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.M16HandSMS
+			slot = 47
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.M16HandSMS
+				cid = 4294870964
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000750000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.M16HandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.AK74HandSMS
+			slot = 46
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AK74HandSMS
+				cid = 4294880504
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000750000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AK74HandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.ThompsonSMG
+			slot = 37
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.ThompsonSMG
+				cid = 4294857802
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000750000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.ThompsonSMG
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.KuziMk2Hand
+			slot = 24
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.KuziMk2Hand
+				cid = 4294857408
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000549999997
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.KuziMk2Hand
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.DesertEagleHandSMS
+			slot = 34
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.DesertEagleHandSMS
+				cid = 4294877548
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00039999999
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.DesertEagleHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAim9mini
+			slot = 27
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAim9mini
+				cid = 4294859776
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAim9mini
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AIM-9 mini
+					maxStaticLaunchRange = 15000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 90
+					DetonationDistance = -1
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAGM114KisFPS
+			slot = 7
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAGM114KisFPS
+				cid = 4294873946
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAGM114KisFPS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AGM-114
+					maxStaticLaunchRange = 6000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 180
+					DetonationDistance = 0.100000001
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MK1Phaser
+			slot = 5
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MK1Phaser
+				cid = 4294875270
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000300000014
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MK1Phaser
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 55
+					maxAmount = 55
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = False
+					throttle = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.WWIIHelmet
+			slot = 33
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.WWIIHelmet
+				cid = 4294857126
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000500000024
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.WWIIHelmet
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MasterChiefHelmetIR
+			slot = 32
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MasterChiefHelmetIR
+				cid = 4294870240
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00100000005
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MasterChiefHelmetIR
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 10
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = False
+					throttle = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.KerbRaceHelmet2
+			slot = 21
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.KerbRaceHelmet2
+				cid = 4294872706
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000500000024
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.KerbRaceHelmet2
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MilitaryHelmet2
+			slot = 31
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MilitaryHelmet2
+				cid = 4294857026
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 9.99999997E-07
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MilitaryHelmet2
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.OrXKlub
+			slot = 49
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.OrXKlub
+				cid = 4294863388
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 9.99999975E-05
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.OrXKlub
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDACategoryModule
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SMISAmicroCam
+			slot = 16
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SMISAmicroCam
+				cid = 4294870082
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000199999995
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SMISAmicroCam
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.GlockHandSMS
+			slot = 35
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.GlockHandSMS
+				cid = 4294874334
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00039999999
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.GlockHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.MiniBot16S
+			slot = 48
+			quantity = 1
+			equipped = False
+			resourceMass = 0.666299999
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.MiniBot16S
+				cid = 4294869002
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 3
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.MiniBot16S
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = CMSmoke
+					amount = 9
+					maxAmount = 9
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = 20x21Ammo
+					amount = 6000
+					maxAmount = 6000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 85
+					minPitch = -85
+					yawRange = 200
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CMDropper
+					isEnabled = True
+					ejectVelocity = 30
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 75000
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrXTricorder
+			slot = 39
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrXTricorder
+				cid = 4294861474
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.405000001
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrXTricorder
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 200
+					maxAmount = 200
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleConductionMultiplier
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					aniState = LOCKED
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					deployPercent = 100
+					animationIsDisabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGPS
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleBiomeScanner
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAsteroidAnalysis
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnalysisResource
+					isEnabled = True
+					abundance = 0
+					resourceName = Ore
+					displayAbundance = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleEnviroSensor
+					isEnabled = True
+					sensorActive = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					cooldownToGo = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 19500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.Blaster
+			slot = 15
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.Blaster
+				cid = 4294876236
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00039999999
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.Blaster
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = False
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = False
+					throttle = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.missileRack
+			slot = 19
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.missileRack
+				cid = 4294867952
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00039999999
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.missileRack
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDAdjustableRail
+					isEnabled = True
+					railHeight = 0
+					railLength = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAim9mini
+			slot = 29
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAim9mini
+				cid = 4294859776
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAim9mini
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AIM-9 mini
+					maxStaticLaunchRange = 15000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 90
+					DetonationDistance = -1
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.paramotor
+			slot = 11
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.paramotor
+				cid = 4294860354
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00200000009
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.paramotor
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = EVA Propellant
+					amount = 10
+					maxAmount = 10
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 4
+					maxAmount = 5
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = FPS Ammo
+					amount = 500
+					maxAmount = 500
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					hibernation = False
+					hibernateOnWarp = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXParaMotor
+					isEnabled = True
+					_throttle = 0
+					staged = False
+					flameout = False
+					EngineIgnited = False
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FXModuleAnimateThrottle
+					isEnabled = True
+					animState = 0
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					xmitIncomplete = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.AmmoPack
+			slot = 1
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.AmmoPack
+				cid = 4294879996
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.AmmoPack
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				RESOURCE
+				{
+					name = FPS Ammo
+					amount = 1000
+					maxAmount = 1000
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = FPS Ammo Rockets
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = False
+					hideFlow = False
+					isVisible = True
+					flowMode = Both
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = CFEnable
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.SkorpionVZHandSMS
+			slot = 23
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.SkorpionVZHandSMS
+				cid = 4294858942
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000549999997
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.SkorpionVZHandSMS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -10
+					yawRange = 70
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAGM114KisFPS
+			slot = 18
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAGM114KisFPS
+				cid = 4294873946
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAGM114KisFPS
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AGM-114
+					maxStaticLaunchRange = 6000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 180
+					DetonationDistance = 0.100000001
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.bahaAim9mini
+			slot = 28
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.bahaAim9mini
+				cid = 4294859776
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.00400000019
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.bahaAim9mini
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = MissileLauncher
+					isEnabled = True
+					decoupleForward = True
+					decoupleSpeed = 10
+					maxAltitude = 0
+					terminalGuidanceShouldActivate = True
+					shortName = AIM-9 mini
+					maxStaticLaunchRange = 15000
+					minStaticLaunchRange = 200
+					maxOffBoresight = 90
+					DetonationDistance = -1
+					dropTime = 0
+					inCargoBay = False
+					detonationTime = 2
+					BallisticOverShootFactor = 0.699999988
+					CruiseAltitude = 500
+					CruiseSpeed = 300
+					CruisePredictionTime = 5
+					gpsSet = False
+					assignedGPSCoords = (0, 0, 0)
+					gpsTargetName = 
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = BDExplosivePart
+					isEnabled = True
+					tntMass = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 5
+					Armor = 2
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.DSR50
+			slot = 26
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.DSR50
+				cid = 4294876650
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 0.000750000007
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.DSR50
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleTurret
+					isEnabled = True
+					maxPitch = 55
+					minPitch = -30
+					yawRange = 80
+					minPitchLimit = 400
+					maxPitchLimit = 400
+					yawRangeLimit = 400
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWeapon
+					isEnabled = True
+					onlyFireInRange = True
+					defaultDetonationRange = 3500
+					useRippleFire = True
+					engageEnabled = True
+					engageRangeMin = 0
+					engageRangeMax = 0
+					engageAir = True
+					engageMissile = True
+					engageGround = True
+					engageSLW = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISItem
+					isEnabled = True
+					staticAttached = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTargetingCamera
+					isEnabled = True
+					cameraEnabled = False
+					currentFovIndex = 0
+					slaveTurrets = False
+					CoMLock = False
+					groundStabilized = False
+					savedLat = 0
+					savedLong = 0
+					savedAlt = 0
+					nvMode = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = MissileFire
+					isEnabled = True
+					weaponIndex = 0
+					targetScanInterval = 3
+					fireBurstLength = 0
+					guardAngle = 360
+					guardRange = 10000
+					gunRange = 2500
+					maxMissilesOnTarget = 1
+					guardMode = False
+					team = False
+					isArmed = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISPickup
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 500
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleOrXWeapon
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleWingCommander
+					isEnabled = True
+					savedWingmen = 
+					commandSelf = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = RadarWarningReceiver
+					isEnabled = True
+					rwrEnabled = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		ITEM
+		{
+			partName = OrX.EULARefinery
+			slot = 38
+			quantity = 1
+			equipped = False
+			resourceMass = 0
+			contentMass = 0
+			contentCost = 0
+			PART
+			{
+				name = OrX.EULARefinery
+				cid = 4294875916
+				uid = 0
+				mid = 0
+				persistentId = 0
+				launchID = 0
+				mirror = 1,1,1
+				symMethod = Radial
+				resPri = 0
+				sepI = 0
+				mass = 1.25
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.5
+				state = 0
+				autostrutMode = Off
+				rigidAttachment = False
+				rTrf = OrX.EULARefinery
+				modCost = 0
+				EVENTS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleOrXEULARefinery
+					isEnabled = True
+					extractSalt = False
+					getGPS = False
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = HitpointTracker
+					isEnabled = True
+					Hitpoints = 49000
+					Armor = 10
+					maxHitPoints = 0
+					ArmorThickness = 0
+					ArmorSet = True
+					ExplodeMode = Never
+					FireFX = True
+					FireFXLifeTimeInSeconds = 5
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISItem
+		isEnabled = True
+		staticAttached = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleOrXLootBox
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = HitpointTracker
+		isEnabled = True
+		Hitpoints = 1500
+		Armor = 10
+		maxHitPoints = 0
+		ArmorThickness = 0
+		ArmorSet = True
+		ExplodeMode = Never
+		FireFX = True
+		FireFXLifeTimeInSeconds = 5
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
